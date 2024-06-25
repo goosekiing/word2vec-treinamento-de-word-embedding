@@ -1,3 +1,6 @@
+Reorganizing the dense paragraph into bullet points or a table for clarity is an excellent idea. It can make the information more digestible and easier to follow. Here's the revised version with the changes:
+
+```markdown
 # Word2Vec: Treinamento de Word Embedding
 
 This repository contains a project focused on training Word2Vec models using a dataset of news titles and texts in Brazilian Portuguese from various websites, classified into categories: columns, daily life, sports, illustrated, market, and world.
@@ -15,7 +18,20 @@ The Spacy library is used for processing and tokenizing the titles, and the Gens
 ### Part 2: Classifying News Titles
 The second part of this project proposes using the models generated in the first part to classify news titles, determining their category. This is similar to what was done in the project "[Word2Vec: Interpretação da Linguagem Humana com Word Embedding](https://github.com/goosekiing/word2vec-interpretacao-da-linguagem-humana-com-word-embedding)", which used Word Embeddings models from NILC (Interinstitutional Center for Computational Linguistics).
 
-Using the same method of summing vectors and classifying with a LogisticRegression model from the previous project, but with the CBOW and SKIP-GRAM models trained in the first part of this project, we achieve a classification accuracy of 79% for the CBOW model and 79% for the SKIP-GRAM model. This is comparable to the 80% accuracy for the CBOW model and 81% for the SKIP-GRAM model achieved with the NILC models. However, each NILC model is over 2.5GB in size, while the models developed here, specifically with the news dataset for news classification, are less than 50MB each. Finally, the classification models are exported in binary format using the pickle library.
+Using the same method of summing vectors and classifying with a LogisticRegression model from the previous project, but with the CBOW and SKIP-GRAM models trained in the first part of this project, we achieve a classification accuracy of:
+
+- **CBOW model:** 79%
+- **SKIP-GRAM model:** 79%
+
+Comparison with NILC models used in the project [Word2Vec: Interpretação da Linguagem Humana com Word Embedding](https://github.com/goosekiing/word2vec-interpretacao-da-linguagem-humana-com-word-embedding):
+
+|              |   Accuracy   |   Accuracy    |     Size     |     Size      |
+|     Model    | (Our Models) | (NILC Models) | (Our Models) | (NILC Models) |
+|--------------|------------- |-------------- |--------------|---------------|
+| CBOW         | 79%          | 80%           | 43MB         | 2.47GB        |
+| SKIP-GRAM    | 79%          | 81%           | 43MB         | 2.47GB        |
+
+- **Exported Models:** The classification models are exported in binary format using the pickle library.
 
 ## Course Details
 This project was completed as part of the 'Advanced Machine Learning' course on Alura. For more information about the course, visit [Alura](https://cursos.alura.com.br/formacao-machine-learning-avancada).
