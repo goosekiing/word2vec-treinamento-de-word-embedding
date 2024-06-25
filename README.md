@@ -1,6 +1,3 @@
-Reorganizing the dense paragraph into bullet points or a table for clarity is an excellent idea. It can make the information more digestible and easier to follow. Here's the revised version with the changes:
-
-```markdown
 # Word2Vec: Treinamento de Word Embedding
 
 This repository contains a project focused on training Word2Vec models using a dataset of news titles and texts in Brazilian Portuguese from various websites, classified into categories: columns, daily life, sports, illustrated, market, and world.
