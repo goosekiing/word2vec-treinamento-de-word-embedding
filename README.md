@@ -22,11 +22,10 @@ Using the same method of summing vectors and classifying with a LogisticRegressi
 
 Comparison with NILC models used in the project [Word2Vec: Interpretação da Linguagem Humana com Word Embedding](https://github.com/goosekiing/word2vec-interpretacao-da-linguagem-humana-com-word-embedding):
 
-|              |   Accuracy   |   Accuracy    |     Size     |     Size      |
-|     Model    | (Our Models) | (NILC Models) | (Our Models) | (NILC Models) |
-|--------------|------------- |-------------- |--------------|---------------|
-| CBOW         | 79%          | 80%           | 43MB         | 2.47GB        |
-| SKIP-GRAM    | 79%          | 81%           | 43MB         | 2.47GB        |
+| Model     | Accuracy (Our Models) | Accuracy (NILC Models) | Size (Our Models) | Size (NILC Models) |
+|-----------|-----------------------|------------------------|-------------------|--------------------|
+| CBOW      | 79%                   | 80%                    | 43MB              | 2.47GB             |
+| SKIP-GRAM | 79%                   | 81%                    | 43MB              | 2.47GB             |
 
 - **Exported Models:** The classification models are exported in binary format using the pickle library.
 
